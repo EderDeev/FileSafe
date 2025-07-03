@@ -1,0 +1,43 @@
+/* ESTILOS DO HEADER */
+
+.cabecalho {
+    
+}
+
+.logo {
+    background-image: url(../img/cabecalho/Logo.jpeg);
+    background-repeat: no-repeat;
+    padding: 34px 117px;
+    margin: 10px;
+    cursor: pointer;
+    background-size: cover;
+    
+}
+
+p{
+    padding-right: 120px;
+    font-family: Times New Roman,Arial, sans-serif;
+    font-size: 30px;
+}
+
+.cabecalho__sair {
+    margin: 0 20px;
+    padding: 5px 10px;
+    border-radius: 10%;
+    background-color: var(--azul-escuro);
+
+}
+/* Aula 1 */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: white; 
+    top: 0;
+    height: 100px;
+    width: 100vw; 
+    z-index: 2;
+  }
