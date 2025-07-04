@@ -32,14 +32,23 @@ session_regenerate_id();
 }
 
 if(array_key_exists($key,$routes)){
-  $controllerClass = $routes["$httpMethod|$pathInfo"];
-  
-  $controller = new $controllerClass($documentRepository);
-  
-}else{
-  http_response_code(404);
+
+  $handler = $routes[$key];
+
+  if(is_array($handler)){
+    [$controllerClass,$method] = $handler;
+    $controller = new $controllerClass();
+    $controller->$method();
+    return;
+  }
+
+  $controller = new $handler($documentRepository);
+  $controller->processaRequisicao();
+  return;
 }
+http_response_code(404);
+
 
 /** @var Controller $controller */
-$controller->processaRequisicao();
+// $controller->processaRequisicao();
 
