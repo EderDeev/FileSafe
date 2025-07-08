@@ -40,6 +40,7 @@ class AuthController implements Controller
 
     public function registerView(): void
     {
+        
         if(array_key_exists('logado', $_SESSION)){
             if($_SESSION['logado'] === true){
                 header('Location: /');

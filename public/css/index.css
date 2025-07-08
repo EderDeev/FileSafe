@@ -5,16 +5,31 @@
     @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
 
     /*! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com*/
+
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
     *,
     :after,
     :before {
       border: 0 solid #e5e7eb;
       box-sizing: border-box;
+    
     }
 
     :after,
     :before {
       --tw-content: "";
+    }
+
+      * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
     }
 
     :host,
@@ -111,9 +126,14 @@
     }
 
     table {
-      border-collapse: collapse;
-      border-color: inherit;
-      text-indent: 0;
+       width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
     }
 
     button,

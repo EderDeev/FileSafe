@@ -9,12 +9,22 @@ require_once  'inicio-html-relatorio.php';
     background-color: var(--azul-escuro);
 
 }
+* {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
     /* Estilizando a tabela */
 #table {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     border-collapse: collapse;
-    font-family: Times New Roman,Arial, sans-serif;
+    font-family: "Times New Roman", Arial, sans-serif;
     font-size: 14px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* Estilo para os cabeçalhos */
@@ -145,7 +155,8 @@ require_once  'inicio-html-relatorio.php';
     searching: false,
     lengthChange: false,
     info: false,
-    paging: false
+    paging: false,
+    autoWidth: false
 }
       );
 } );

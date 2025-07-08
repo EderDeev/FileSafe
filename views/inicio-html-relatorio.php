@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
        
-    <title>AluraPlay</title>
+    <title>Relatorio</title>
     <link rel="shortcut icon" href="/public//img//favicon.ico" type="image/x-icon">
     <style>
         /* ESTILOS DO HEADER */
@@ -15,19 +15,26 @@
 
 
 .logo {
-    background-image: url(../img/cabecalho/Logo.jpeg);
+    background-image: url(../img/cabecalho/LogoIFPA.png);
     background-repeat: no-repeat;
     padding: 34px 117px;
     margin: 10px;
     cursor: pointer;
-    background-size: cover;
+    background-size: contain;
     
 }
 
 p{
-    padding-right: 120px;
-    font-family: Times New Roman,Arial, sans-serif;
-    font-size: 30px;
+   font-family: 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+  margin: 40px 0 20px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.8px;
+  padding-right: 150px;
+ 
 }
 
 .cabecalho__sair {

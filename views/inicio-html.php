@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/novo-documento.css">
     <link rel="stylesheet" href="../css/login-form.css">
-    <title>AluraPlay</title>
+    <title>FileSave</title>
     <link rel="shortcut icon" href="/public//img//favicon.ico" type="image/x-icon">
 </head>
 

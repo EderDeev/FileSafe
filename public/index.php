@@ -17,14 +17,17 @@ $documentRepository = new DocumentRepository($pdo);
 $routes = require_once __DIR__ . '/../config/routes.php';
 
 $pathInfo = $_SERVER['PATH_INFO'] ?? '/';
+$pathInfoRegister = $_SERVER['PATH_INFO'] ?? '/';
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 
 $key = "$httpMethod|$pathInfo";
 session_start();
 $isLoginPath = $pathInfo === '/login';
+$isRegisterPath = $pathInfoRegister === '/register';
+
 
 session_regenerate_id();
-  if(!array_key_exists('logado',$_SESSION) && !$isLoginPath ){   
+  if(!array_key_exists('logado',$_SESSION) && !$isLoginPath && !$isRegisterPath){   
         
     header('Location: /login');
       return;
