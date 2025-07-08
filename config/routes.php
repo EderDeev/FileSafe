@@ -7,9 +7,7 @@ use Alura\Controller\ArquivoListController;
 use Alura\Controller\EditDocumentController;
 use Alura\Controller\FormController;
 use Alura\Controller\NewArquivoController;
-use Alura\Controller\LoginFormController;
-use Alura\Controller\LoginController;
-use Alura\Controller\LogoutController;
+use Alura\Controller\AuthController;
 use Alura\Controller\RelatorioController;
 
 
@@ -21,8 +19,10 @@ return [
     'GET|/editar-documento' => FormController::class,
     'POST|/editar-documento' => EditDocumentController::class,
     'GET|/download-documento' => ArquivoDownloadController::class,
-    'GET|/login' => LoginFormController::class,
-    'POST|/login' => LoginController::class,
-    'GET|/logout' => LogoutController::class,
+    'GET|/login' => [AuthController::class,'processaRequisicao'],
+    'POST|/login' => [AuthController::class,'login'],
+    'GET|/logout' => [AuthController::class,'logout'],
+    'GET|/register' => [AuthController::class,'registerView'],
+    'POST|/register' => [AuthController::class,'register'],
     'GET|/relatorio-documento' => RelatorioController::class,
 ];
