@@ -9,3 +9,4 @@ versão do PHP utilizada no projeto:
 comando para rodar a aplicação em um servidor local:
 php -S localhost:80 -t public
 -------------------------------------------------------
+GitHub projeto: https://github.com/EderDeev/FileSafe
