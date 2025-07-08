@@ -13,7 +13,7 @@ php -S localhost:80 -t public
 GitHub projeto: https://github.com/EderDeev/FileSafe
 -------------------------------------------------------
 Alunos:
-Ederson Moreira
-Arthur Andrade
-Samuel Amoras
-João Miranda
+Ederson Moreira;
+Arthur Andrade;
+Samuel Amoras;
+João Miranda.
